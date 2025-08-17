@@ -1,0 +1,21 @@
+version: 1.0
+
+rules:
+  path: ./rules.md
+  description: Project-wide coding conventions and error handling
+
+knowledge:
+  path: ./knowledge/
+  description: Technical notes and ADRs with a README.md for guidance
+
+apis:
+  path: ./apis/
+  description: OpenAPI/Swagger contracts with a README.md explaining usage
+
+templates:
+  path: ./templates/
+  description: Code and test scaffolding templates, documented in README.md
+
+goals:
+  path: ./goals/
+  description: Step-by-step executable tasks, each explained in README.md

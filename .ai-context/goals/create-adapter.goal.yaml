@@ -1,0 +1,36 @@
+name: Create Payments Adapter
+description: Generate a new adapter using the payments API and project templates
+
+inputs:
+  openapi: ./apis/payments.openapi.yaml
+  adapterName: PaymentsAdapter
+  targetDir: ./src/adapters/payments
+
+steps:
+  - id: generate-types
+    tool: openapi
+    action: types
+    args:
+      spec: "{{inputs.openapi}}"
+      outFile: "{{inputs.targetDir}}/types.ts"
+
+  - id: scaffold-adapter
+    tool: scaffold
+    action: template
+    args:
+      template: ./templates/adapter.ts.hbs
+      outFile: "{{inputs.targetDir}}/index.ts"
+      data:
+        name: "{{inputs.adapterName}}"
+        methods: [createCustomer, createPlan, subscribe, getInvoice]
+
+  - id: create-tests
+    tool: scaffold
+    action: template
+    args:
+      template: ./templates/e2e.spec.ts.hbs
+      outFile: ./tests/e2e/payments.adapter.spec.ts
+
+constraints:
+  followRules: true
+  minCoverage: 0.7

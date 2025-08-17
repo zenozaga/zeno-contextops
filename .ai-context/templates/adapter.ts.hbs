@@ -1,0 +1,25 @@
+import { CustomError } from "@/errors";
+import * as T from "./types";
+
+export class {{name}} {
+  constructor(private readonly api: { baseURL: string; token?: string }) {}
+
+  async createCustomer(input: T.CreateCustomerInput): Promise<T.Customer> {
+    try {
+      // TODO: implement HTTP call using this.api.baseURL
+      return {} as T.Customer;
+    } catch (e: any) {
+      throw CustomError.new("CreateCustomer failed", 400, { cause: e?.message });
+    }
+  }
+
+  {{#if methods}}
+  // Generated methods
+  {{#each methods}}
+  async {{this}}(...args: unknown[]): Promise<unknown> {
+    // TODO: implement
+    return {};
+  }
+  {{/each}}
+  {{/if}}
+}
