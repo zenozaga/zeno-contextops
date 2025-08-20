@@ -6,7 +6,7 @@ This task will help you (the client) onboard your project by asking a series of 
 ## How it works
 1. The agent will summarize what it understands about your project from the current files and structure.
 2. The agent will present this summary to you and explain the next steps.
-3. The agent will ask you a set of questions, such as:
+3. The agent will ask you a set of questions, one at a time, waiting for your response before proceeding to the next. Example questions include:
    - What is the main purpose of your project?
    - What programming languages and frameworks do you use?
    - What are your main workflows or business processes?
