@@ -3,7 +3,6 @@ tasks:
   description: Agent-executable tasks. Each file is a task. To execute, use 'run task:<number>'.
   list:
     - README.md: Instructions and usage for adding and running tasks.
-    - project_review.md: Reviews the entire project and generates a summary describing its structure, main components, and purpose.
 version: 1.0
 
 rules:
