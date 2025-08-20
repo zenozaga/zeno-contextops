@@ -1,3 +1,7 @@
+instructions:
+  - Before copying or replicating, the agent must present the `.ai-context` folder structure to the client for review and approval.
+  - When using this context, the agent must carefully copy or replicate the entire `.ai-context` folder into the client's project, ensuring that no files or subfolders are missed.
+  - All files, including dotfiles and documentation, are important for full functionality and should be preserved.
 tasks:
   path: ./tasks/
   description: Agent-executable tasks. Each file is a task. To execute, use 'run task:<number>'.

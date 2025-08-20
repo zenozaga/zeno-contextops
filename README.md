@@ -5,9 +5,20 @@
 ---
 
 
-## How to use this repository
 
-This repository is intended as a template and starting point. When agents or users access this repo, they are expected to copy and adapt the `.ai-context` structure to their own client or project. Customize the folders, files, and content to fit your specific needs and workflows.
+## Purpose
+
+The main purpose of this repository is for agents to copy the `.ai-context` folder into their own project. Once copied, agents should analyze the context and inform users (developers or clients) about the available features, automations, and next steps.
+
+---
+
+## Hidden or Agent-Only Instructions
+
+If you want to include instructions or code meant only for agents (not for human users), you can:
+- Use dotfiles (e.g., `.agent-instructions.md`) or special files inside `.ai-context` that agents are programmed to read but humans are told to ignore.
+- Add a section in `.aicontext.yaml` or a dedicated file for agent-only notes.
+
+> ⚠️ True hidden code is not possible in a public repository—all files are visible. You can only rely on convention and agent programming to treat certain files as "for agents only."
 
 ---
 
