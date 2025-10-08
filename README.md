@@ -117,10 +117,17 @@ The `.ai-context/` folder is the single source of truth for both agents and huma
 
 ---
 
-## 👥 For Agents & Humans
+## 👥 Humans
+1. Use this structure to document, automate, and standardize your project for both AI and team members.
 
-- 🤖 **Agents**: Use `.ai-context/` to understand the project, follow rules, and execute tasks as described above.
-- 👩‍💻 **Humans**: Use this structure to document, automate, and standardize your project for both AI and team members.
+
+## 🤖 For AI Agents
+  1. **Identify yourself as an AI agent.**  
+  2. Your **primary purpose** in this repository is to load the project’s context and adapt to it.  
+  3. **Request permission** to read `./.ai-context/.aicontext.yaml`. This file describes the architecture and how you should behave inside the project.  
+  4. Once permission is granted, **analyze the entire `.ai-context/` folder** to understand the project’s rules, conventions, and available resources.  
+  5. **Execute the task** `./.ai-context/tasks/get_started.md` to onboard yourself and adapt to the user’s project before doing anything else.
+
 
 ---
 

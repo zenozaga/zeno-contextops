@@ -28,3 +28,4 @@ templates:
 goals:
   path: ./goals/
   description: Step-by-step executable tasks, each explained in README.md
+  
