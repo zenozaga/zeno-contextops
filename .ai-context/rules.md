@@ -55,9 +55,18 @@ This file defines **rules for creating and maintaining .ai-context templates** i
    - Verify all tasks are executable
    - Ensure all referenced files exist
 
+## Template Application Rules
+
+8. **User Confirmation Mandatory**: Before applying ANY template to a user's project:
+   - MUST ask user which template they want to apply
+   - MUST ask explicit confirmation: "Do you want me to proceed with applying the [TEMPLATE_NAME] template?"
+   - MUST wait for user approval before copying files
+   - NEVER proceed without explicit user consent
+   - This rule applies to ALL agents using this template hub
+
 ## Maintenance Rules
 
-8. **Version Control**: 
+9. **Version Control**: 
    - Each template should have version info in its .aicontext.yaml
    - Document breaking changes in template README.md
    - Keep templates updated with current best practices

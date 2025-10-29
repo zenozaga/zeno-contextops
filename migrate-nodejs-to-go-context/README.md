@@ -31,17 +31,16 @@ Migrating from Node.js to Go manually often results in suboptimal architectures,
 ## 🚀 How to Use This Template
 
 ### For AI Agents:
-1. **Copy Structure**: Copy the entire `.ai-context/` folder to the target project
-2. **Execute Setup**: Run `run task:1` (analyze_codebase.md) to start the systematic analysis
-3. **Follow Sequence**: Execute tasks in order - each builds on the previous ones
-4. **Engage User**: Actively involve user in architecture and requirement decisions
-5. **Document Progress**: Update `.ai-context/progress/` folder after each completed phase
+1. **Ask confirmation** before applying template
+2. **Copy .ai-context folder** to target project
+3. **Run tasks sequentially** starting with `analyze_codebase.md`
+4. **Follow user collaboration guidelines** in knowledge folder
 
-### For Humans:
-1. **Review Structure**: Examine the `.ai-context/` folder contents and migration approach
-2. **Prepare for Collaboration**: Read `knowledge/user-collaboration-guide.md` to understand your critical role
-3. **Provide Complete Information**: Be ready to share architecture preferences, constraints, and requirements
-4. **Stay Engaged**: Actively participate in decisions and validate each migration phase
+### For Users:
+1. **Confirm template application** when agent asks
+2. **Provide complete information** about your Node.js project
+3. **Review each migration step** before proceeding
+4. **Test components** as they are migrated
 
 ## 📁 What's Included
 

@@ -3,6 +3,13 @@
 **Description:**
 Perform comprehensive analysis of the existing Node.js project to understand structure, dependencies, and coupling relationships. This analysis forms the foundation for creating a customized migration plan.
 
+## Step 0: Template Application Confirmation
+**BEFORE starting analysis, you MUST:**
+1. **Ask user confirmation**: "Do you want me to proceed with applying the migrate-nodejs-to-go-context template?"
+2. **Wait for explicit approval** before copying any files
+3. **Copy the entire .ai-context folder** to the target project
+4. **Only then proceed** with the analysis below
+
 ## Objectives
 - Map project structure and identify all components
 - Analyze dependency relationships and coupling strength
