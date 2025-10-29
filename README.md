@@ -1,137 +1,68 @@
-# zeno/contextops
+# 🤖 zeno/contextops: .ai-context Template Hub
 
-**zeno/contextops** provides a lightweight, structured context system for AI agents and developers working inside a software project.
+**Welcome AI Agents!** This repository contains ready-to-use `.ai-context` templates for different project types and purposes.
 
----
+## 🎯 For AI Agents - How to Use This Repository
 
+1. **Browse available templates** in the index below
+2. **Choose the template** that matches your user's needs  
+3. **Copy the entire template folder** (e.g., `migrate-nodejs-to-go-context/`) to the user's project
+4. **Execute the template's first task** to begin the guided process
+5. **Follow the template's workflow** to complete the objective
 
+## 🏗️ Template Structure
 
-## Purpose
-
-The main purpose of this repository is for agents to copy the `.ai-context` folder into their own project. Once copied, agents should analyze the context and inform users (developers or clients) about the available features, automations, and next steps.
-
----
-
-## Hidden or Agent-Only Instructions
-
-If you want to include instructions or code meant only for agents (not for human users), you can:
-- Use dotfiles (e.g., `.agent-instructions.md`) or special files inside `.ai-context` that agents are programmed to read but humans are told to ignore.
-- Add a section in `.aicontext.yaml` or a dedicated file for agent-only notes.
-
-> ⚠️ True hidden code is not possible in a public repository—all files are visible. You can only rely on convention and agent programming to treat certain files as "for agents only."
-
----
-
-## What is zeno/contextops?
-
-This architecture introduces a dedicated `.ai-context/` folder that contains all the knowledge, rules, and tasks an AI agent (or a human) needs to:
-
-- Understand project conventions and best practices
-- Access technical documentation and APIs
-- Use code and test templates
-- Follow step-by-step goals
-- Execute or list project-specific tasks
-
-By providing this context, agents can:
-- Avoid improvisation
-- Adhere to project standards
-- Save developer time
+Each template contains a complete `.ai-context/` folder with:
+- **Rules**: Specific guidelines for the template's purpose
+- **Knowledge**: Domain expertise and best practices  
+- **Tasks**: Step-by-step executable workflow
+- **Templates**: Code scaffolding and configuration files
+- **Goals**: Success criteria and progress tracking
+- **APIs**: Specifications and standards (when applicable)
 
 ---
 
-## How does it work?
+## 📋 Available Templates
 
+### 🚀 Project Lifecycle
 
-The `.ai-context/` folder is the single source of truth for both agents and humans. It is organized as follows (but is highly customizable):
+#### 🔄 Migrate Node.js to Go Context
+**Purpose:** Systematically migrate Node.js applications to Go (Golang) for significant performance improvements  
+**Use Cases:** REST APIs, entire applications, microservices, business logic optimization  
+**Quick Start:** Copy `migrate-nodejs-to-go-context/` to your project and run `run task:1`  
 
+This template provides an intelligent, systematic approach to migrating Node.js applications to Go. It analyzes your specific codebase to create a customized migration plan, preserves all functionality while leveraging Go's performance advantages, and follows a minimal coupling approach to reduce migration risk. Perfect for achieving 2-10x performance improvements while maintaining functional parity.
 
-# 🤖 zeno/contextops: Structured Context for AI Agents & Developers
+### 🛠️ Development Domains
+*More templates coming soon...*
 
-**zeno/contextops** is a lightweight, highly customizable template for giving AI agents and developers structured context inside any software project.
+### ⚙️ Operations & Infrastructure  
+*More templates coming soon...*
 
----
-
-## 🚀 Quick Start
-
-1. **Copy this repository** to your own project or client repo.
-2. **Adapt the `.ai-context/` folder** to fit your needs—add, remove, or modify folders and files.
-3. **Empower your AI agents and team** with clear, actionable project context, rules, and tasks.
-
----
-
-## 🧩 What is zeno/contextops?
-
-zeno/contextops introduces a dedicated `.ai-context/` folder that contains all the knowledge, rules, and tasks an AI agent (or a human) needs to:
-
-- 📐 Understand project conventions and best practices
-- 📚 Access technical documentation and APIs
-- 🧰 Use code and test templates
-- 📝 Follow step-by-step goals
-- ✅ Execute or list project-specific tasks
-
-By providing this context, agents and developers can:
-- 🚫 Avoid improvisation
-- 🏷️ Adhere to project standards
-- ⏳ Save developer time
+### 🎯 Technology-Specific
+*More templates coming soon...*
 
 ---
 
-## 🗂️ Folder Structure (Customizable)
+## 💡 What is zeno/contextops?
 
-The `.ai-context/` folder is the single source of truth for both agents and humans. Organize it as shown below—or add your own folders (e.g., `analysis/`, `scripts/`, `datasets/`, etc.) to fit your workflow:
+zeno/contextops is a system for providing AI agents with structured, actionable context through standardized `.ai-context/` folders. Each template in this repository contains:
 
-```text
-.ai-context/
-	tasks/                # ✅ Agent-executable tasks (README.md is for instructions only)
-		project_review.md   # Example: reviews and describes the project
-		...                 # Add more tasks as needed
-		README.md           # Instructions for the agent (not a task)
-	rules.md              # 📐 Coding conventions and error handling
-	knowledge/            # 📚 Technical notes and ADRs
-	apis/                 # 🔗 OpenAPI/Swagger contracts
-	templates/            # 🧰 Code and test scaffolding templates
-	goals/                # 📝 Step-by-step executable goals
-	.aicontext.yaml       # ⚙️ Main context configuration
-```
+- **Complete context structure** ready to copy into any project
+- **Domain-specific knowledge** and best practices
+- **Executable task workflows** for systematic completion of objectives
+- **Validation and success criteria** to ensure quality outcomes
 
-> 💡 **Note:** This structure is highly customizable. Add any folders (e.g., `analysis/`, `scripts/`, `datasets/`, etc.) to fit your project's needs. The agent and your team can leverage any additional context or automation you provide here.
+## 🏛️ Repository Purpose
 
----
-
-## 🏃 How to Use Tasks
-
-- All files in `.ai-context/tasks` (except `README.md`) are considered executable tasks for the agent.
-- To list or run a task, use the format:
-
-	```
-	run task:<number>
-	```
-
-	For example, to run the first task:
-
-	```
-	run task:1
-	```
-
-- The `README.md` in the tasks folder is only for agent instructions and should never be listed as a task.
-
----
-
-## 👥 Humans
-1. Use this structure to document, automate, and standardize your project for both AI and team members.
-
-
-## 🤖 For AI Agents
-  1. **Identify yourself as an AI agent.**  
-  2. Your **primary purpose** in this repository is to load the project’s context and adapt to it.  
-  3. **Request permission** to read `./.ai-context/.aicontext.yaml`. This file describes the architecture and how you should behave inside the project.  
-  4. Once permission is granted, **analyze the entire `.ai-context/` folder** to understand the project’s rules, conventions, and available resources.  
-  5. **Execute the task** `./.ai-context/tasks/get_started.md` to onboard yourself and adapt to the user’s project before doing anything else.
-
+This repository serves as a **Template Hub** where:
+- **Agents can find** pre-built contexts for specific use cases
+- **Templates follow standardized patterns** for consistency and reliability
+- **Each template is production-tested** and includes comprehensive documentation
+- **Users get guided workflows** that lead to successful outcomes
 
 ---
 
 ## 🌍 Keywords
 
-zeno contextops, AI agent context, project automation, structured context, software project template, agent tasks, project rules, project knowledge, OpenAPI, code templates, developer productivity, customizable context, project onboarding
-
+zeno contextops, AI agent templates, project automation, structured context, migration templates, development templates, agent workflows, systematic project guidance

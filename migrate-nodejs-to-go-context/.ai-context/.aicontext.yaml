@@ -1,0 +1,92 @@
+# Template: migrate-nodejs-to-go-context
+purpose: |
+  This template helps agents systematically migrate Node.js applications to Go (Golang) 
+  to achieve significant performance improvements, higher speed, and optimized service execution.
+  The agent analyzes the source code and creates a customized step-by-step migration plan.
+
+template_type: project_migration
+version: 1.0.0
+target_projects: 
+  - nodejs_apis
+  - nodejs_microservices
+  - nodejs_entire_applications
+  - nodejs_business_logic
+
+instructions:
+  - Agent must analyze existing Node.js source code to create customized migration steps
+  - Always ask user for target Go architecture preferences and additional requirements
+  - Follow minimal coupling approach - migrate isolated components first
+  - Create progress tracking in .ai-context/progress/ folder
+  - Generate tests after each migration step completion
+
+setup_tasks:
+  - name: analyze_nodejs_codebase
+    description: Deep analysis of existing Node.js project structure, dependencies, and coupling
+    required: true
+  - name: gather_architecture_preferences
+    description: Ask user for Go architecture patterns and additional customization needs
+    required: true
+  - name: create_migration_plan
+    description: Generate step-by-step migration plan based on coupling analysis
+    required: true
+
+rules:
+  path: ./rules.md
+  description: Migration rules focusing on architecture selection and user collaboration
+  focus: migration_patterns, user_interaction, systematic_approach
+
+knowledge:
+  path: ./knowledge/
+  description: Node.js to Go migration knowledge base and user education guides
+  topics:
+    - nodejs_vs_go_differences
+    - migration_patterns
+    - user_collaboration_guide
+    - performance_optimization
+    - best_practices
+
+tasks:
+  path: ./tasks/
+  description: Sequential migration workflow from analysis to deployment
+  workflow:
+    - analyze_codebase
+    - create_migration_plan
+    - migrate_isolated_components
+    - migrate_coupled_components
+    - validate_and_test
+
+templates:
+  path: ./templates/
+  description: Go project infrastructure and architecture templates
+  includes:
+    - go_project_structure
+    - deployment_configs
+    - docker_compose_testing
+    - architecture_abstractions
+
+goals:
+  path: ./goals/
+  description: Migration objectives with progress tracking and validation
+  objectives:
+    - performance_improvement
+    - functionality_preservation
+    - systematic_completion
+    - test_coverage
+
+apis:
+  path: ./apis/
+  description: Project-specific API specifications and best practices framework
+  specifications: adaptive_based_on_project_analysis
+
+validation:
+  success_criteria:
+    - custom_migration_plan_completed
+    - all_components_migrated_systematically
+    - tests_passing_after_each_step
+    - performance_improvements_achieved
+    - progress_fully_documented
+  required_outputs:
+    - complete_go_application
+    - migration_progress_logs
+    - test_suite_results
+    - performance_benchmarks

@@ -1,7 +1,15 @@
+purpose: |
+  This repository serves as a TEMPLATE HUB for .ai-context structures.
+  The .ai-context folder in the root is FOR AGENTS maintaining this repository.
+  The README.md serves as an index for external agents to find and use templates.
+
+repository_role: template_hub_maintainer
+
 instructions:
-  - Before copying or replicating, the agent must present the `.ai-context` folder structure to the client for review and approval.
-  - When using this context, the agent must carefully copy or replicate the entire `.ai-context` folder into the client's project, ensuring that no files or subfolders are missed.
-  - All files, including dotfiles and documentation, are important for full functionality and should be preserved.
+  - This .ai-context helps agents understand how to maintain and add new templates to this repository
+  - Each template folder contains a complete .ai-context structure ready to be copied to client projects
+  - Before adding any new template, follow the rules defined in ./rules.md
+  - Always update the root README.md index when adding new templates
 tasks:
   path: ./tasks/
   description: Agent-executable tasks. Each file is a task. To execute, use 'run task:<number>'.
@@ -23,7 +31,11 @@ apis:
 
 templates:
   path: ./templates/
-  description: Code and test scaffolding templates, documented in README.md
+  description: Templates for creating new .ai-context templates and documentation
+  includes:
+    - template-readme.md: README structure for new templates
+    - template-aicontext-yaml.md: .aicontext.yaml configuration template
+    - readme-index-structure.md: Root README.md index formatting guide
 
 goals:
   path: ./goals/
