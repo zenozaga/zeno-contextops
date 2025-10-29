@@ -24,14 +24,12 @@ Each template contains a complete `.ai-context/` folder with:
 
 ## 📋 Available Templates
 
-### 🚀 Project Lifecycle
+| Template | Category | Description | Quick Start |
+|----------|----------|-------------|-------------|
+| 🔄 **migrate-nodejs-to-go-context** | Project Lifecycle | Systematically migrate Node.js applications to Go for 2-10x performance improvements. Analyzes codebase and creates custom migration plan following minimal coupling approach. | Copy folder → `run task:1` |
 
-#### 🔄 Migrate Node.js to Go Context
-**Purpose:** Systematically migrate Node.js applications to Go (Golang) for significant performance improvements  
-**Use Cases:** REST APIs, entire applications, microservices, business logic optimization  
-**Quick Start:** Copy `migrate-nodejs-to-go-context/` to your project and run `run task:1`  
-
-This template provides an intelligent, systematic approach to migrating Node.js applications to Go. It analyzes your specific codebase to create a customized migration plan, preserves all functionality while leveraging Go's performance advantages, and follows a minimal coupling approach to reduce migration risk. Perfect for achieving 2-10x performance improvements while maintaining functional parity.
+### 🚀 Project Lifecycle Templates
+- **migrate-nodejs-to-go-context**: Complete Node.js to Go migration with analysis-driven approach
 
 ### 🛠️ Development Domains
 *More templates coming soon...*
