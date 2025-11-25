@@ -1,31 +1,64 @@
+
 # 🤖 zeno/contextops: .ai-context Template Hub
 
-## 🎯 For AI Agents
+Bienvenido agentes de IA y humanos 👋
 
-1. **Ask user which template** to apply from the list below
-2. **Ask confirmation**: "Do you want me to proceed with applying the [TEMPLATE_NAME] template?"
-3. **Copy entire template folder** to user's project
-4. **Follow template's README.md** instructions
+Este repositorio es un hub de plantillas `.ai-context` que permite a agentes inteligentes y desarrolladores automatizar tareas complejas, migraciones y generación de proyectos siguiendo mejores prácticas y flujos guiados.
 
-> ⚠️ **Always ask confirmation before proceeding**
+## 🚩 Propósito del Repositorio
+
+**zeno/contextops** proporciona una estructura estándar `.ai-context/` que contiene todo el conocimiento, reglas, tareas y plantillas necesarias para que agentes y humanos:
+
+- 📐 Comprendan convenciones y mejores prácticas del proyecto
+- 📚 Accedan a documentación técnica y APIs
+- 🧰 Usen plantillas de código y pruebas
+- 📝 Sigan objetivos paso a paso
+- ✅ Ejecuten o enumeren tareas específicas del proyecto
+
+Esto permite que cualquier agente (o persona) que ingrese al proyecto sepa exactamente qué hacer, cómo colaborar y cómo automatizar procesos sin improvisar ni perder tiempo.
+
+## 🧩 ¿Cómo funciona?
+
+1. **Explora las plantillas disponibles** en la tabla de abajo
+2. **Elige la plantilla** que se adapte a tu necesidad
+3. **Copia la carpeta completa** (por ejemplo, `migrate-nodejs-to-go-context/`) al proyecto destino
+4. **Sigue el README.md** de la plantilla para ejecutar el flujo guiado
+
+> ⚠️ Los agentes SIEMPRE deben pedir confirmación antes de aplicar una plantilla
 
 ---
 
-## 📋 Available Templates
+## 📋 Plantillas Disponibles
 
-| Template | Category | Description | Quick Start |
-|----------|----------|-------------|-------------|
-| 🔄 **migrate-nodejs-to-go-context** | Project Lifecycle | Systematically migrate Node.js applications to Go for 2-10x performance improvements. Analyzes codebase and creates custom migration plan following minimal coupling approach. | Copy folder → `run task:1` |
+| Template | Categoría | ¿Para qué sirve? | Quick Start |
+|----------|-----------|------------------|-------------|
+| 🔄 **migrate-nodejs-to-go-context** | Migración de proyectos | Migra aplicaciones Node.js a Go de forma sistemática, con análisis de código y plan personalizado para mejorar rendimiento y mantenibilidad. | Copia carpeta → Ejecuta `analyze_codebase.md` |
+| 🏗️ **clean-architecture-distributed-go-context** | Generación de proyectos | Genera proyectos Go listos para producción con Clean Architecture, DDD, Event-Driven y Outbox Pattern, optimizados para sistemas distribuidos y alto rendimiento. | Copia carpeta → Responde 6 preguntas técnicas |
 
-### 🚀 Project Lifecycle Templates
-- **migrate-nodejs-to-go-context**: Complete Node.js to Go migration with analysis-driven approach
+### 🚀 Ejemplos de Uso
+- **Migrar APIs Node.js a Go** para mayor velocidad y eficiencia
+- **Generar backend Go distribuido** con arquitectura limpia y eventos garantizados
 
-### 🛠️ Development Domains
-*More templates coming soon...*
+### 🛠️ ¿Quién puede usarlo?
+- Agentes de IA que automatizan tareas y migraciones
+- Desarrolladores que buscan flujos guiados y mejores prácticas
 
-### ⚙️ Operations & Infrastructure  
-*More templates coming soon...*
+### ⚡ Beneficios
+- Evita improvisación y errores
+- Ahorra tiempo en onboarding y ejecución
+- Facilita colaboración humano-IA
 
-### 🎯 Technology-Specific
-*More templates coming soon...*
+---
+
+## 📚 Más información
+
+Cada plantilla incluye:
+- **Rules**: Reglas y lineamientos técnicos
+- **Knowledge**: Base de conocimiento y mejores prácticas
+- **Tasks**: Flujos de trabajo paso a paso
+- **Templates**: Archivos de código y configuración
+- **Goals**: Objetivos y criterios de éxito
+- **APIs**: Especificaciones y estándares
+
+Consulta el README.md dentro de cada plantilla para instrucciones detalladas.
 
